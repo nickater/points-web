@@ -11,8 +11,10 @@ export const PointCard: FunctionComponent<PointCardProps> = ({
   onSelection,
   isSelected,
 }) => {
+  const onClick = () => onSelection(value);
+
   return (
-    <Pressable onClick={() => onSelection(value)}>
+    <Pressable onClick={onClick}>
       <div
         className={`border border-slate-600 p-4 text-8xl rounded-md ${
           isSelected && "bg-slate-400"

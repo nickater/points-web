@@ -4,13 +4,13 @@ import { PointCard } from "../../molecules/PointCard/PointCard";
 type PointCardsProps = {
   onCardSelection: (value: number) => void;
   selectedCardValue: number;
+  options: number[];
 };
 export const PointCards: FunctionComponent<PointCardsProps> = ({
   onCardSelection,
   selectedCardValue,
+  options,
 }) => {
-  const options = [0, 1, 3, 5, 8, 13];
-
   return (
     <div>
       <ul className="flex flex-wrap gap-4 justify-center">
