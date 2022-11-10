@@ -10,7 +10,7 @@ export const HomeTitleButton = () => {
 
   return (
     <Pressable onClick={onClick}>
-      <div className="my-auto mx-4">Points</div>
+      <div>Points</div>
     </Pressable>
   );
 };

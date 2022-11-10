@@ -8,16 +8,13 @@ export const Pressable: FunctionComponent<
 > = ({ children, onClick }) => {
   const [isClicked, setIsClicked] = useState(false);
 
-  const localOnClick = () => {
-    setIsClicked(true);
-    onClick();
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 100);
-  };
-
   return (
-    <button style={{ opacity: isClicked ? 0.6 : 1 }} onClick={localOnClick}>
+    <button
+      onMouseDown={() => setIsClicked(true)}
+      onMouseUp={() => setIsClicked(false)}
+      className={`${isClicked && "opacity-5"}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

@@ -11,7 +11,7 @@ export const PointsTemplate: FunctionComponent<PointsTemplateProps> = ({
   return (
     <div className="flex justify-around">
       <div>
-        <div className="text-3xl">{pointsChoice}</div>
+        <div className="text-center my-8">{pointsChoice}</div>
         <div>{pointCards}</div>
       </div>
     </div>

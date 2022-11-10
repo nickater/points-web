@@ -8,9 +8,7 @@ export const MenuButton = () => {
 
   return (
     <Pressable onClick={onClick}>
-      <div className="px-2">
-        <Menu size={30} />
-      </div>
+      <Menu size={30} />
     </Pressable>
   );
 };
