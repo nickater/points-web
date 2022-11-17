@@ -12,7 +12,7 @@ export const rootRoutes = createBrowserRouter([
         element: <HomeScreen />,
       },
       {
-        path: "/points",
+        path: "/points/:id",
         element: <PointsScreen />,
       },
     ],

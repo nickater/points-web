@@ -2,9 +2,9 @@ import { FunctionComponent } from "react";
 import { PointCard } from "../../molecules/PointCard/PointCard";
 
 type PointCardsProps = {
-  onCardSelection: (value: number) => void;
-  selectedCardValue: number;
-  options: number[];
+  onCardSelection: (value: string) => void;
+  selectedCardValue: string;
+  options: string[];
 };
 export const PointCards: FunctionComponent<PointCardsProps> = ({
   onCardSelection,

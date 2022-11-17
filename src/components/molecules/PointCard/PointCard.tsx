@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 import { Pressable } from "../../atoms/Pressable/Pressable";
 
 type PointCardProps = {
-  value: number;
-  onSelection: (value: number) => void;
+  value: string;
+  onSelection: (value: string) => void;
   isSelected: boolean;
 };
 export const PointCard: FunctionComponent<PointCardProps> = ({
@@ -16,7 +16,7 @@ export const PointCard: FunctionComponent<PointCardProps> = ({
   return (
     <Pressable onClick={onClick}>
       <div
-        className={`border border-slate-600 p-4 text-8xl rounded-md ${
+        className={`border border-slate-600 p-4 text-6xl rounded-md ${
           isSelected && "bg-slate-400"
         }`}
       >
